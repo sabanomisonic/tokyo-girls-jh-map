@@ -22,7 +22,7 @@ function App() {
   const [activeTab, setActiveTab] = useState('list');
 
   // Filters
-  const [minDeviation, setMinDeviation] = useState(40);
+  const [minDeviation, setMinDeviation] = useState(30);
 
   useEffect(() => {
     fetchSchools();
@@ -119,7 +119,7 @@ function App() {
                 </label>
                 <input
                   type="range"
-                  min="40"
+                  min="30"
                   max="70"
                   value={minDeviation}
                   onChange={(e) => setMinDeviation(Number(e.target.value))}
